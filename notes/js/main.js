@@ -238,9 +238,10 @@ $(function(){
 		e.preventDefault(); 
 		let $form          = $(this), 
 		    data           = $form.serializeObject();  
-			data["cmd"]    = "enter"; 
-			hash           = getPassHash();
-		    data["hash"]   = hash;   
+				data["cmd"]    = "enter";
+				hash           = getPassHash();
+		    data["hash"]   = hash;
+				data["pass"]   = "secret";
 
 		if(data["pass"]){   
 		
